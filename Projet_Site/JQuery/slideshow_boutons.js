@@ -1,0 +1,20 @@
+$(document).ready(function(){
+	$('#img_prec').hover(function()
+	{
+		$('#img_prec').attr("src","img/precedent_diap_hover.png");
+	},
+	function()
+	{
+		$('#img_prec').attr("src","img/precedent_diap.png");
+	}
+	);
+	$('#img_suiv').hover(function()
+	{
+		$('#img_suiv').attr("src","img/suivant_diap_hover.png");
+	},
+	function()
+	{
+		$('#img_suiv').attr("src","img/suivant_diap.png");
+	}
+	);				
+});

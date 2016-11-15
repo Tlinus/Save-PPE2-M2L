@@ -1,0 +1,1303 @@
+@font-face {
+   font-family: 'ok';	
+   src: url('font/BREAK IT.ttf') format('truetype');
+}
+
+@font-face
+{
+	font-family:'slider';
+	src: url('font/universal mind.ttf') format('truetype');
+}
+@font-face
+{
+	font-family:'sliderH1';
+	src: url('font/street_college.ttf') format('truetype');
+}
+html{
+	background:linear-gradient(#EEE,white);
+	background-repeat:no-repeat;
+	height:100vh;
+}
+*
+{
+	padding:0px;
+	margin:0px;
+}
+body
+{
+	width:100%;
+}
+
+header
+{
+	width:100%;
+	float:left;
+	height:80px;
+}
+.titrepage{
+	text-align:center;
+	color:red;
+	float:left;
+	width:90%;
+	line-height:9vh;
+}
+a:link{
+	text-decoration:none;
+}
+#panier tr,#panier td {
+	border: 1px solid black;
+    border-color:black;
+	border-collapse: collapse;
+	padding: 8px;
+}
+#panier table{
+	border:1px solid black;
+}
+.scroller{
+	overflow:hidden;
+}
+/* ************************   MENU TOP    *****************************/
+
+#menu_top
+{
+	width: 70%;
+	margin-left:15%;
+	color:white;
+	height:8vh;
+	background:#F33;
+	font-weight: 1.2em;
+	-webkit-border-bottom-right-radius: 90px;
+	-webkit-border-bottom-left-radius: 90px;
+	-moz-border-radius-bottomright: 90px;
+	-moz-border-radius-bottomleft: 90px;
+	border-bottom-right-radius: 90px;
+	border-bottom-left-radius: 90px;
+	box-shadow: -1px 2px 5px 1px rgba(200, 20, 20, 0.7); 
+}
+#menu_top a
+{
+	text-decoration:none;
+	color:white;
+	width: 100%;
+}
+#menu_top ul.niveau1
+{
+	width:100%;
+}
+
+#menu_top ul.niveau1 li
+{
+	display:inline-block;
+	list-style-type:none;
+	text-align:center;
+	width:13.5%;
+	line-height:7vh;
+	vertical-align: top;
+	font-size: 1.2em;
+	font-family: Arial, serif;
+	text-decoration:none;
+	overflow: hidden;
+	
+}
+#menu_top img
+{
+	position:relative;
+	height:8vh;
+	width: 100%;
+
+}
+#menu_top span{
+	display: none;
+}
+#menu_top ul ul
+{
+	display:none;
+	position:absolute;
+	right:3%;
+	width:80%;
+	top: 0 ;
+}
+#menu_top li:hover ul.niveau2
+{
+	display:block;
+	z-index:12;
+	width:25%;
+	background: #F33;
+	border-radius:30px;
+
+}
+#menu_top ul.niveau2 li
+{
+	display:block;
+	line-height:40px;
+	font-size:20px;
+	width:100%;
+	text-align:left;
+	padding:10px;
+	text-align:center;
+}
+#menu_top ul.niveau2 a
+{
+	color: white;
+	font-family: arial;
+	line-height: 10px;
+	font-size: 1em;
+	padding-top:-10px;
+	width:100%;
+}
+#menu_top ul.niveau2 a:hover
+{
+	color: black;
+}
+#menu_top ul.niveau1 a:hover{
+	color: black;
+	text-decoration: underline;
+}
+/* ************************   MENU LEFT   *****************************/
+
+#menu_left
+{
+	height:80vh;
+	float:left;
+	width:6%;
+}
+#menu_left ul.niveau1
+{
+	position:fixed;
+	height:25vh;
+	width:6%;
+	margin-top:32.5vh;
+	color:#FF3333;
+	font-family: 'ok', Arial, serif;
+	font-size:25px;
+	line-height:20px;
+}
+#menu_left ul.niveau1 li
+{
+	list-style-type:none;
+	text-align:center;
+	width:100%;
+	border-left:#E33 2px solid;
+	border-right:#E33 2px solid;
+}
+#menu_left ul.niveau1 ul.niveau2 li
+{
+	padding:10px;
+	border:hidden;
+}
+#menu_left ul.niveau2
+{
+	display:none;
+
+}
+
+#menu_left li:hover ul.niveau2
+{
+	display:block;
+	position:absolute;
+	height:80vh;
+	top:-30vh;
+	left:-110%;
+}
+#menu_left ul.niveau2 img
+{
+	width:60px;
+	height:60px;
+	padding:10px;
+}
+#menu_left ul.niveau2 p
+{
+	display:none;
+}
+
+#menu_left ul.niveau1  li:hover 
+{
+	transform: translate(100%);
+	transition:transform 2s;
+}
+#menu_left ul.niveau2 li:hover
+{
+	transform:scale(1.2) translate(15%);
+	transition:0.1s;
+	background-image:linear-gradient( 60deg,#FF3333, #cc2222, #EEE, #cc2222 ,#FF3333);
+	margin-left: -10px;
+	border-radius: 0px 150px 150px 0px;
+}
+#menu_left ul.niveau2 li:hover p
+{
+	display:block;
+	font-size:20px;
+	text-align:center;
+}
+/*************************** SLIDE SHOW ********************************/
+
+#diaporama 
+{
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+	height: 80vh;
+	list-style-type: none;
+	float:left;
+}
+
+#diaporama li 
+{
+	overflow: hidden;
+	position: absolute;
+	height:80vh;
+	width:100%;
+}
+
+#diaporama li a 
+{
+	display: block;
+	height: 52vh;
+}
+
+#diaporama li a img 
+{
+	border: 0;
+	height:70vh;
+	width:100%;
+}
+#diaporama li p 
+{
+	background:rgba(0,0,0,0.4);
+	color:white;
+	position:absolute;
+    bottom:10vh;
+	padding:2px;
+	height:12vh;
+	float:left;
+    width:100%;
+    font-weight: 1em;
+	font-family:'slider';
+}
+#wrapper
+{
+	position: relative;
+	width:60%;
+	height:60vh;
+	top:12vh;
+	right:-14%;
+	list-style-type: none;
+	float:left;
+}
+#defilement{
+	position:relative;
+	top:-50vh;
+	padding:2%;
+	width:96%;
+}
+
+#defilement .precedente
+{
+	float:left;
+
+}
+#defilement .suivante
+{
+	float:right;
+}
+
+#defilement img
+{
+	width:60px;
+	height:60px;
+	opacity:0.7;
+}
+#index_defilement
+{
+	list-style-type:none;
+	height:20px;
+	position:relative;
+	top:-80vh;
+	right:-49%;
+}
+#index_defilement li
+{
+	display:inline-block;
+}
+#index_defilement img
+{
+	width:10px;
+	height:10px;
+}
+
+
+label {
+
+display:block;
+
+width:150px;
+
+float:left;
+
+}
+/****************************************PAGE D'INSCRIPTION********************************************/
+#box
+{
+	width : 25%;
+	margin: auto;
+	background-color: #757575;
+ 	margin-top: 20%;
+	border: 3px solid white;
+	color: #CCC;
+}
+
+#tableInscription
+{
+	display: block;
+	width: 100%;
+	margin: auto;
+}
+
+#tableInscription tbody{
+	display:  block;
+	width: 100%;
+	margin-left: 12.5%;
+}
+#tableInscription td{
+	width:  100%;
+	text-align: center;
+
+}
+#tableInscription tr {
+	width: 100%;
+
+}
+#box #inscription
+{
+	background: #3498db;
+	background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+	background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+	background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+	background-image: -o-linear-gradient(top, #3498db, #2980b9);
+	background-image: linear-gradient(to bottom, #3498db, #2980b9);
+	-webkit-border-radius: 28;
+	-moz-border-radius: 28;
+	border-radius: 28px;
+	font-family: Arial;
+	color: #ffffff;
+	font-size: 20px;
+	padding: 10px 20px 10px 20px;
+	text-decoration: none;
+	width: 50%;
+	margin: auto;
+	display: block;
+	margin-top: 2%;
+}
+#box p
+{	
+	text-align: center;
+	color: white;
+}
+
+#box a
+{	
+	text-align: center;
+	color: #CC0000;
+	text-decoration: none;
+	
+}
+
+#box h1 
+{
+	text-align: center;
+	font-size: 2em;
+	color: #012849;
+}
+
+#error
+{
+	text-align: center;
+	font-size: 1.2em;
+	color: #CC9900;
+	text-decoration: blink;
+	margin-bottom: 10px;
+}
+
+/*************************************************PAGES DU FORUM********************************************************************/
+
+#forum3
+{
+	background-color: rgba( 240, 240,240, 1);
+	/*margin-left: 10%;
+	margin-top: 20%;*/
+	position: relative;
+	top: 20vh;
+	width: 80%;
+	margin-left: 12%;
+	padding-top: 15px;
+	padding-bottom:  20px; 
+	box-shadow: 6px 6px 7px #AAAAAA;
+	margin-bottom:  32%;
+}
+.retour a
+{
+	margin-left: 20px;
+	text-decoration:none;
+	color: rgb(220, 150, 150);
+}
+.retour a:hover
+{
+	margin-left: 20px;
+	text-decoration: underline;
+	color: red;
+}
+#forum3 h1
+{
+	text-decoration: none;
+	color: #FF3333;
+	text-align: center;
+}
+#forum3 .deconx
+{
+	text-align: right;
+	color: white;
+	text-decoration: none;
+	margin-right: 20px;
+}
+
+.categorie
+{
+	border: 3px solid rgb(228, 228, 228);
+	padding: 10px;
+	margin: 10px;
+	margin-bottom: 10px;
+	margin-bottom: : 1px;
+	background-color: white;
+}
+.categorie h3
+{
+	text-align: center;
+	color: #FF3333;
+	font-size: 2em;
+	line-height: 80px;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	}
+.categorie p, .categorie h1, .categorie a
+{	
+	width: 100%;
+	text-align: center;
+	color: #FF3333 ;
+	font-size: 1.4em;
+	text-decoration:none;
+
+}
+ .categorie a:hover
+ {
+ 	position: relative;
+ 	left: 10px;
+ 	color: #A22;
+ }
+
+.post
+{
+	margin: 10px;
+	padding: 25px;
+	border: solid rgb(228,228,228) 2px;
+	background-color: white;
+}
+
+#forum3 h6
+{
+	color: rgb(100, 100, 100);
+	font-size: 1.3em;
+	display: inline-block;
+}
+
+#forum3 h5
+{
+	color: rgb(149, 150, 150);
+	font-size: 1.1em;
+	text-align: right;
+	display: inline-block;
+}
+
+#forum3 p
+{
+	color: #888888;
+}
+
+#forum3 #allpost
+{
+	margin: 10px;
+	margin-top: : 1px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	border: double white 2px;
+}
+
+.sujet h1
+{
+	color: rgb(255,255,255);
+	max-width: 80%;
+	margin-left: 10%;
+	
+}
+
+.sujet
+{
+	margin: 30px;
+	border: double rgb(228,228,228) 2px;
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	border-radius: 50px;
+	color: #9EB2B1;
+}
+
+.bouton1
+ {
+	border:none;
+	padding:6px 0 6px 0;
+	border-radius:8px;
+	background:#0A1F4A;
+	font:bold 13px Arial;
+	color:#fff;
+	width: 100%;
+	margin-top: 10px;
+
+}
+
+.bouton1:hover
+{
+	border: 5px solid #163160;
+	background-color: #fff;
+	color:#0A1F4A ;
+}
+
+.bouton2
+ {
+	border:none;
+	padding:6px 6px 6px 6px;
+	border-radius:8px;
+	background:#FF3333;
+	font:bold 13px Arial;
+	color:#fff;
+	width: 100%;
+	margin-top: 10px;
+	text-decoration: none;
+	margin-left:45%;
+	margin-top:200px;
+}
+
+.bouton2:hover
+{
+	border: 2px solid #FF3333;
+	background-color: #fff;
+	color:#FF3333 ;
+}
+
+/**************************************** CHAT*********************************************************************/
+#tchat #console{
+	overflow-y:auto;
+	-moz-overflow-y: auto;
+	overflow-x: hidden;
+	width: 80%;
+	max-height: 400px;
+	min-width: 80%;
+	min-height: 70vh;
+	background-color: rgba(180,40,40, 0.9);
+	margin-top: 50px;
+	display: inline-block;
+	border-bottom: 2px solid rgba(100,150,250, 0.9);
+	border-top: 2px solid rgba(100,150,250, 0.9);
+	border-left: 2px solid rgba(100,150,250, 0.9);
+}
+
+#tchat #utilisateursenlignes{
+	display: inline-block;
+	max-width: 15%;
+	vertical-align: top;
+	margin-top: 50px;
+	background-color: rgba( 240, 240,240, 1);
+	border: 3px solid rgb(228, 228, 228);
+	border-radius: 5px;
+	max-height: 400px;
+	min-height: 70vh;
+	overflow-y:scroll;
+}
+#tchat #utilisateursenlignes h3{
+	color: #FF3333;
+	text-align: center;
+}
+#tchat #utilisateursenlignes ul li{
+	display: block;
+	list-style-type: none;
+	color: #5B578C;
+	background-color: rgb(228, 228, 228);
+	border-top: 1px solid rgb(30,60,80);
+	text-align: right;
+}
+#tchat textarea {
+
+	resize: none;
+	width: 80%;
+	height: 50px;
+	color: rgb(210,210,210);
+	background-color: rgba(0,0,0,0.7);
+	border: 3px solid rgba(0,0,0,0.9);
+	color:#0BCE08 ;
+	border-radius: 10px;
+	margin-top: -5px;
+}
+#tchat p, #tchat h4, #tchat pre {
+	color: rgb(205,205,245);
+	font-family: sans-serif;
+}
+#tchat h4{
+	margin-bottom: 7px;
+	margin-left: 2%;
+}
+#tchat tr{
+	width: 80% ;
+}
+
+.bouton3{
+	border:none;
+	padding:6px 6px 6px 6px;
+	border-radius:8px;
+	background:#FF3333;
+	font:bold 13px Arial;
+	color:#fff;
+	text-decoration: none;
+
+}
+
+.bouton3:hover
+{
+	border: 2px solid #FF3333;
+	background-color: #fff;
+	color:#FF3333 ;
+}
+.reset{
+	margin-left: 55%;
+	display: inline-block;
+}
+#sep{
+	width: 90%;
+	height: 2px;
+	background-color:rgba(100,100,100,0.5);
+	margin-left: 5%;
+	-webkit-border-radius: 28;
+	-moz-border-radius: 28;
+	border-radius: 28px;
+}
+
+#tchat span{
+width: 50px;
+overflow: hidden;
+}
+
+#tchat
+	{
+		margin-left: 150px;
+		padding: 20px;
+	}
+
+/**********************************************************************************************************************************/
+/*********************************************************BOUTIQUE*****************************************************************/
+/**********************************************************************************************************************************/
+#categorie
+{
+	color: white;
+	width:12%;
+	float:left;
+	margin:8px;
+	background-color:white;
+	padding:1%;
+	border-radius:15px;
+}
+#categorie li
+{
+	list-style-type:none;
+	text-align:center;
+	background:#FF3333;
+	color:white;
+	font-family:'slider';
+	border-radius:10px;
+	margin-bottom:10px;
+	line-height:4vh;
+	font-size:2.3vh;
+}
+#categorie li:hover
+{
+	background:orange;
+}
+#categorie a
+{
+	color:black;
+	text-decoration:none;
+}
+#produit img
+{
+	width:70%;
+	height:20vh;
+	margin-left:15%;
+}
+#produit
+{
+	width:19%;
+	height:30vh;
+	float:right;
+	background:#FF3333;
+	border-radius:10px;
+	margin:2px;
+	border:solid 1px black;
+}
+#produit input{
+	width:40%;
+	height:3vh;
+	margin-left:30%;
+}
+#produit h1
+{
+	text-align:center;
+	line-height:20px;
+	font-size:20px;
+	color:white;
+	font-family:'slider';
+}
+#produit p
+{
+	padding:2px;
+	text-align:center;
+	color:red;
+	line-height:3vh;
+	font-size:3vh;
+	font-family:'ok';
+	overflow:hidden;
+	height:3vh;
+}
+#content
+{
+	position:relative;
+	width:84.72%;
+	float:right;
+	height:800px;
+	overflow:auto;
+}
+#boutique
+{
+	top:5vh;
+	width:79%;
+	float:right;
+	margin:3%;
+	margin-right:10%;
+	background:white;
+	border:ridge grey 8px;
+	border-radius:30px;
+}
+/***********************************************PREVIEW BOUTIQUE*************************************************************/
+#contenu_preview{
+	padding:30px;
+}
+#preview{
+	width:50%;
+	height:80vh;
+	position:absolute;
+	background-color:white;
+	margin-left:25%;
+	margin-top:10vh;
+	border-radius:30px;
+	display:none;
+}
+
+#preview img{
+	height:50vh;
+	width:50%;
+	float:left;
+}
+#preview h1{
+	color:red;
+	text-align:center;
+	line-height:8vh;
+	font-size:4vh;
+}
+#preview p{
+	padding:0.2%;
+}
+#preview_screen{
+	width:100%;
+	height:100vh;
+	position:fixed;
+	background-color:rgba(0,0,0,0.7);
+	display:none;
+}
+@-moz-keyframes preview{
+
+	0%{transform:scale(0.5);}
+	100%{transform:scale(1);}
+}
+#contenu_preview p{
+	float:right;
+	width:37%;
+}
+#preview input[type="text"]{
+	width:20%;
+}
+#preview input[type="button"]{
+	width:50%;
+	height:5vh;
+	border-radius:10px;
+}
+
+/*******************************************PANIER BOUTIQUE*************************************************************/
+#panier{
+	position:fixed;
+	margin-left:79%;
+	z-index:1;
+	width:20%;
+	padding:0.5%;
+	height:25vh;
+	margin-top:150px;
+	background-color:#FF3333;
+	border-radius:20px;
+	color:white;
+	border:2px solid black;
+}
+#panier a {
+	color: white;
+	text-decoration: underline;
+}
+#panier h1{
+	text-align:center;
+}
+#panier ul li{
+	text-align:center;
+}
+#voir_Panier{
+	width:40%;
+	margin-left:30%;
+	margin-top:5px;
+}
+#produit_panier{
+	overflow:auto;
+	height:15vh;
+	border:1px solid black;
+	text-align:center;
+
+}
+#produit_panier li{
+	list-style-type:none;
+}
+#icone_panier{
+	position:fixed;
+	width:4%;
+	height:8vh;
+	margin-left:92.5%;
+	top:3vh;
+	border: 4px solid white;
+	border-radius:40px;
+}
+#icone_panier:hover{
+background-color:orange;
+}
+/******************************************* ADMINISTRATION*********************************************************/
+
+#admin_sec{
+	width:40%;
+	margin-left:30%;
+	border:1px solid black;
+	padding:20px;
+	border-radius:20px;
+	margin-top:1%;
+	background-color:white;
+	float:left;
+}
+#admin_sec table{
+}
+#admin_sec h1{
+	text-align:center;
+
+}
+#submit_admin{
+	margin:10px;
+	width:20%;
+	height:40px;
+	font-size:15px;
+	line-height:20px;
+}
+#option_rec_adm li{
+	display:inline-block;
+}
+#option_rec_adm{
+	float:left;
+}
+#result_rech{
+	height:30vh;
+	margin-left:9.9%;
+	margin-top:20px;
+	width:80%;
+	background-color:white;
+	border:1px solid black;
+	border-radius:20px;
+	float:left;
+	overflow:auto;
+}
+#resultat tr,#resultat td {
+    border: 1px solid black;
+    border-color:black;
+	border-collapse: collapse;
+	padding: 8px;
+}
+#resultat{
+	border-spacing: 0px;
+}
+.administration{
+	float:left;
+}
+#wrapper_rec_adm{
+	width:40%;
+	margin-left:24%;
+	background-color:white;
+	padding:20px;
+	float:left;
+	border-radius:20px;
+	border:1px solid black;
+	
+}
+#wrapper_rec_adm h1{
+	text-align:center;
+}
+#admin_sec.correction{
+	margin-left:24%;
+}
+#sous_sec_adm{
+	width:44.5%;
+	float:left;
+	border:1px solid black;
+	border-radius:20px;
+	padding:10px;
+	margin:1%;
+}
+#submit_admin{
+	width:20%;
+	margin-left:40%;
+}
+#sous_sec_adm.article_admin{
+	width:90%;
+	margin-left:5%;
+}
+#admin_sec.article_admin{
+	width:70%;
+	margin-left:15%;
+}
+/************************************************************ presentation M2L ****************************************************/
+#m2lprez{
+	
+	margin-left: 10%;
+	padding-right: 75px;
+
+
+}
+#m2lprez div{
+	border: 2px solid #AAA;
+	margin-top: 25px;
+	background-color:  #DDD;
+}
+#m2lprez h1{
+	text-align: center;
+	font-size: 1.6em;
+	color:#E33;
+}
+#m2lprez div p{
+	text-align: justify;
+	font-size: 1em;
+	padding: 10px;
+}
+#m2lprez div h2{
+	font-size: 1.3em;
+	text-align: center;
+	text-decoration: underline;
+	color: #933;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+/************************************************************Ligue de Quidditch*****************************************************/
+#quidditch{
+	padding-top: 110px;
+	margin-left: 10%;
+	width: 80%;
+	background-color: white;
+	color: #222;
+	text-align: justify;
+	font-size: 1.2em;
+	font-family: bold;
+}
+#quidditch p{
+	padding: 20px;
+}
+
+#quidditch ol {
+	margin-left: 40%;
+}
+#quidditch iframe {
+	margin-left: 25%;
+}
+#quidditch h1{
+	text-align: center;
+	font-size: 1.2em;
+}
+#a1 img{
+	max-width: 80%;
+
+}
+
+/*********************************************************** Mon Profil ************************************************************************/
+#monProfil{
+	padding-top: 10%;
+	margin-left: 20%;
+	max-width: 60%;
+}
+#monProfil table{
+	background-color: #FF3333;
+
+}
+#monProfil h3
+{
+	text-align: center;
+	color: #FF3333;
+	font-size: 1.6em;
+	padding-bottom: 20px;
+}
+#monProfil td{
+	color: #CCC;
+	text-align: center;
+	vertical-align: middle;
+	padding: 2;	
+	overflow: hidden;	
+}
+#monProfil .libel {
+	font-family: verdana;
+	color: #EEE;
+}
+#monProfil #button{
+	background-color: #FF3333;
+	border: 1px solid #AAA;
+	text-decoration: none;
+	font-size: 1.4em;
+	color: #CCC;
+	margin-left: 38%;
+	margin-top: 3%;
+}
+#monProfil b{
+	: 15px;
+
+}
+#monProfil .button4 {
+	padding:6px ;
+	border-radius:8px;
+	background:#FF3333;
+	font:bold 13px Arial;
+	color:#fff;
+	text-decoration: none;
+	border-style: solid;
+	box-shadow: -2px -2px 4px #AAA;
+}
+#monProfil .button4:hover
+{
+	border: 2px solid #FF3333;
+	background-color: #fff;
+	color:#FF3333 ;
+}
+.warning{
+	text-align: center;
+	margin: 20px 0px;
+	font-size: 1.5em;
+	color: #C11 ;
+	text-decoration: underline;
+	padding: 5px;
+	border:  2px solid  #C11;
+
+}
+#monProfil #button a{
+	text-decoration: none;
+}
+
+.modif td{
+	border-right: 2px solid #999;
+	border-left:  2px solid #999;
+}
+/**********************************************************Consulter profil ********************************************************************/
+#consultprofil
+{
+	padding-top: 10%;
+	margin-left: 20%;
+	max-width: 60%;
+}
+#consultprofil table{
+	background-color: #FF3333
+	width: 80%;
+
+}
+#consultprofil h3
+{
+	text-align: center;
+	color: #A32;
+	font-size: 1.6em;
+	padding-bottom: 20px;
+}
+#consultprofil td{
+	color: #FF3333;
+	text-align: center;
+	vertical-align: middle;
+	padding: 2;	
+	overflow: hidden;	
+	font-size: 2em;
+	min-width:  35%;
+	
+}
+/**********************************************************ARTICLE DISPLAYER********************************************************************/
+#art_displayer{
+	float:left;
+	background:white;
+	width:80%;
+	margin-top:8vh;
+	margin-left:3%;
+	padding:1%;
+}
+#art_displayer img{
+	width:40%;
+	margin-left:30%;
+}
+#art_displayer h1{
+	text-align:center;
+}
+/*********************************************************RECAP COMMANDE************************************************************************/
+#recapanier{
+	width:75%;
+	float:left;
+	margin-left:5%;
+	font-size:20px;
+	border-radius:20px;
+	margin-top:2%;
+	background-color:white;
+	padding:2%;
+}
+table.tab_commande,table.tab_commande td,table.tab_commande tr{
+	font-size:20px;
+	border:1px solid black;
+	border-collapse:collapse;
+	padding:5px;
+	text-align:center;
+	margin:1%;
+} 
+#recapanier h1{
+	color:red;
+	text-align:center;
+}
+#valider_commande{
+	width:30%;
+	height:5vh;
+	margin-left:35%;
+	background-color:#464d70;
+	color:white;
+	font-size:2vh;
+}
+/**********************************************************FAQ********************************************************************************/
+
+#faq{
+	margin-top: 50px;
+	width: 80%;
+	background-color: #CCC;
+	margin-left: 10%;
+
+}
+#faq div{
+	padding: 20px;
+	margin: 50px;
+}
+#faq h1{
+	color: #890922;
+	font-size: 1.4em;
+	text-align: center;
+}
+#faq h2{
+	color: #890944;
+	font-size: 1.2em;
+	text-align: center;
+	margin-top: 20px;
+	margin-left: 20px;
+}
+#faq p{
+	color: #890900;
+	font-size: 1em;
+	text-align: justify;
+}
+/***********************************************************Responsive**************************************************************************/
+
+
+/*************************************** ADMINISTRATION ***********************************************/
+.admintools{
+    width:100px;
+    height:100px;
+}
+.admintools div{
+    width:30px;
+    position:relative;
+    z-index:5;
+    float:left;
+}
+.admintools div img{
+    
+    width:30px;
+    cursor:pointer;
+}
+#editor{
+    position:absolute;
+    width:60vw;
+    margin-left:20vw;
+    padding:20px;
+    background-color:white;
+    display:none;
+    height:80vh;
+    overflow:scroll;
+    z-index:50;
+}
+#addCategorie{
+    width:30vw;
+    left:35vw;
+    top:0vh;
+    background-color:white;
+    position:absolute;
+    z-index:8;
+    padding:30px;
+    border:1px solid black;
+    display:none;
+}
+#addArticle{
+   width:30vw;
+    left:35vw;
+    background-color:white;
+    position:absolute;
+    z-index:8;
+    padding:30px;
+    border:1px solid black; 
+    display:none;
+}
+#addArticle input,#addArticle textarea{
+    width:100%;   
+}
+#addArticle textarea{
+    height:20vh;
+}
+.adminImg{
+    width:30px;
+    height:30px;
+    cursor:pointer;
+}
+#blackScreen2{
+   position:absolute;
+    top:0;
+    left:0;
+    z-index:7;
+    background-color:rgba(0,0,0,0.5);
+    display:none;
+    width:100vw;
+    height:100vh;
+}
